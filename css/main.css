@@ -20,3 +20,16 @@ section {
   color: #fff;
   background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
 }
+
+h2{
+  margin: 0;
+  font-size: 2rem;
+  grid-area: f1;
+  justify-content: center;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
