@@ -1,9 +1,22 @@
 html {
-  box-sizing: border-box;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+box-sizing: border-box;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+font-family: "Overpass", sans-serif;
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  display: grid;
+  grid-template-areas: "f1" "f2" "f3" "f4";
+  background-color: #ff9500;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
 }
