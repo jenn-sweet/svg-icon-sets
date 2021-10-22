@@ -1,12 +1,13 @@
 html {
-box-sizing: border-box;
--webkit-text-size-adjust: 100%;
-text-size-adjust: 100%;
-font-family: "Overpass", sans-serif;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: Overpass, sans-serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -16,20 +17,68 @@ body {
 section {
   display: grid;
   grid-template-areas: "f1" "f2" "f3" "f4";
+  gap: 6vmin;
+  padding: 6vmin;
   background-color: #ff9500;
   color: #fff;
   background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
 }
 
-h2{
+h2 {
   margin: 0;
+  padding: 0;
   font-size: 2rem;
   grid-area: f1;
   justify-content: center;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: #fff;
+  padding: 1em;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+a:hover,
+a:focus {
+  background-color: #fff;
+  border-color: #fff;
+  color: #ff5e3a;
+}
+
+.icon {
+  position: relative;
+  height: 8em;
+  width: 8em;
+  margin-bottom: 1.5rem;
+}
+
+.icon svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: currentColor;
+}
+
+@media only screen and (min-width: 38em) {
+
+  section {
+    grid-template-areas:
+        "f1 f1 f1"
+        "f2 f3 f4";
+  }
+
 }
